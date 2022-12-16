@@ -401,7 +401,7 @@ nav a:focus,
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-section-social {
   margin-left: 70px;
@@ -476,7 +476,7 @@ nav a:focus,
   position: relative;
   overflow: hidden;
 }
-.portfolio-image-container:hover .overlay-message {
+.portfolio-tiles li:hover .overlay-message {
   transform: translateY(0);
 }
 .overlay-message {
@@ -541,3 +541,50 @@ nav a:focus,
 .portfolio-section figcaption {
   padding: 20px 0;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: 0;
+  pointer-events: none;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  position: relative;
+  cursor: initial;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-closing-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* .modal-closing-button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
