@@ -586,4 +586,9 @@ nav a:focus,
   align-items: center;
   font-size: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+}
+.modal-closing-button:hover {
+  cursor: pointer;
+  background-color: lightgrey;
 }
